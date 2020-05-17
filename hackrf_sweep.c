@@ -372,6 +372,38 @@ int rx_callback(hackrf_transfer* transfer) {
                                 
                                 if(blubi<50.00 && counter>100000){
                                    
+                                  if(frequency>=5658000000 && frequency<5695000000){
+                                  system("curl -d 'deviceId=0' http://10.0.0.22:8080/api/trackers/detection");
+                                  }
+                                  if(frequency>=5695000000 && frequency<5732000000){
+                                  system("curl -d 'deviceId=1' http://10.0.0.22:8080/api/trackers/detection");
+                                  }
+
+                                  if(frequency>=5732000000 && frequency<5769000000){
+                                  system("curl -d 'deviceId=2' http://10.0.0.22:8080/api/trackers/detection");
+                                  }
+
+                                  if(frequency>=5769000000 && frequency<5806000000){
+                                  system("curl -d 'deviceId=3' http://10.0.0.22:8080/api/trackers/detection");
+                                  }
+
+                                  if(frequency>=5806000000 && frequency<5843000000){
+                                  system("curl -d 'deviceId=4' http://10.0.0.22:8080/api/trackers/detection");
+                                  }
+
+                                  if(frequency>=5843000000 && frequency<5880000000){
+                                  system("curl -d 'deviceId=5' http://10.0.0.22:8080/api/trackers/detection");
+                                  }
+
+                                  if(frequency>=5880000000 && frequency<5917000000){
+                                  system("curl -d 'deviceId=6' http://10.0.0.22:8080/api/trackers/detection");
+                                  }
+
+                                  if(frequency>=5917000000 && frequency<5937000000){
+                                  system("curl -d 'deviceId=7' http://10.0.0.22:8080/api/trackers/detection");
+                                  }
+
+
 
                                  //double timer_spent = timer_end.tv_sec - timer_start.tv_sec + (timer_end.tv_usec - timer_start.tv_usec);
                                  //long timer_spent = timer_start.tv_usec;
