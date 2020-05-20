@@ -371,35 +371,36 @@ int rx_callback(hackrf_transfer* transfer) {
                                  int counter=counter+1;
                                 
                                 if(blubi<50.00 && counter>100000){
-                                   
-                                  if(frequency>=5658000000 && frequency<5695000000){
+                                  //1
+                                  if(frequency>=5658000000 && frequency<5675000000){
                                   system("curl -d 'deviceId=0' http://10.0.0.22:8080/api/trackers/detection");
                                   }
-                                  if(frequency>=5695000000 && frequency<5732000000){
+                                  //2 
+                                  if(frequency>=5680000000 && frequency<5716000000){
                                   system("curl -d 'deviceId=1' http://10.0.0.22:8080/api/trackers/detection");
                                   }
-
-                                  if(frequency>=5732000000 && frequency<5769000000){
+                                  //3
+                                  if(frequency>=5717000000 && frequency<5724000000){
                                   system("curl -d 'deviceId=2' http://10.0.0.22:8080/api/trackers/detection");
                                   }
-
-                                  if(frequency>=5769000000 && frequency<5806000000){
+                                  //4
+                                  if(frequency>=5740000000 && frequency<5795000000){
                                   system("curl -d 'deviceId=3' http://10.0.0.22:8080/api/trackers/detection");
                                   }
-
-                                  if(frequency>=5806000000 && frequency<5843000000){
+                                  //5
+                                  if(frequency>=5798000000 && frequency<5820000000){
                                   system("curl -d 'deviceId=4' http://10.0.0.22:8080/api/trackers/detection");
                                   }
-
-                                  if(frequency>=5843000000 && frequency<5880000000){
+                                  //6
+                                  if(frequency>=5838000000 && frequency<5850000000){
                                   system("curl -d 'deviceId=5' http://10.0.0.22:8080/api/trackers/detection");
                                   }
-
-                                  if(frequency>=5880000000 && frequency<5917000000){
+                                  //7
+                                  if(frequency>=58600000000 && frequency<5900000000){
                                   system("curl -d 'deviceId=6' http://10.0.0.22:8080/api/trackers/detection");
                                   }
-
-                                  if(frequency>=5917000000 && frequency<5937000000){
+                                  //8
+                                  if(frequency>=5901000000 && frequency<5937000000){
                                   system("curl -d 'deviceId=7' http://10.0.0.22:8080/api/trackers/detection");
                                   }
 
